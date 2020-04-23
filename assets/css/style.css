@@ -11,7 +11,7 @@ p img {
     -webkit-box-shadow: 0 0 10px #555;
 }
 
-p strong {
+p strong, li strong {
   color: #ec4863;
   text-decoration: none;
   background-image: linear-gradient(#ffda66, #ffda66);
