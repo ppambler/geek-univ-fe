@@ -9,7 +9,7 @@
 HTML -> CSS -> JS -> HTTP -> Webpack -> Vue -> Node.js -> React -> TypeScript
 
 ## ★目录
-
+- [00-资料](./00.md)
 - [01-重学-学习方法](./01.md)
   - [01-番外-面试官怎么想](./01-01.md)
 - [02-重学-构建知识体系](./02.md)
