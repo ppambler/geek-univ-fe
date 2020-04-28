@@ -2,5 +2,6 @@
 
 ## ★目录
 
+- [Think](./think.md)
 - [FAQ](./faq.md)
 - [week01](./week01/README.md)
