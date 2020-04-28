@@ -14,6 +14,7 @@ HTML -> CSS -> JS -> HTTP -> Webpack -> Vue -> Node.js -> React -> TypeScript
   - [01-番外-面试官怎么想](./01-01.md)
 - [02-重学-构建知识体系](./02.md)
 - [03-重学-工程体系](./03.md)
+- [04-作业](./04.md)
 
 
 
