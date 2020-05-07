@@ -42,3 +42,105 @@ sRGB -> 这种标准得到了W3C的支持 -> 用于互联网
 
 ➹：[Grammar of CSS 2.1](https://www.w3.org/TR/2011/REC-CSS2-20110607/grammar.html#grammar)
 
+5）CSS有多少种属性？有多少种值？
+
+6）CSS标准总览？
+
+➹：[All CSS specifications](https://www.w3.org/Style/CSS/specs.en.html)
+
+7）一些讲CSS的文档？
+
+➹：[CSS - Syntax - Tutorialspoint](https://www.tutorialspoint.com/css/css_syntax.htm)
+
+8）`@charset`和`@import`在CSS里边是如何写的？
+
+``` css
+@charset "utf-8";
+@import 'custom.css';
+```
+
+形式语法（Formal syntax）：
+
+``` css
+@charset "<charset>";
+@import [ <string> | <url> ] [ <media-query-list> ]?;
+```
+
+➹：[@charset - CSS: Cascading Style Sheets - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@charset)
+
+➹：[@import - CSS: Cascading Style Sheets - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
+
+9）`@media`和`@page`都是些什么东西？
+
+media types 是样式表最重要的特性之一 -> 它们规定了文档如何在不同的媒体上呈现: 屏幕上、纸上、语音合成器、盲文设备等等
+
+某些 CSS 属性仅适用于某些媒体，但是，有时不同媒体类型的样式表可能会共享一个CSS属性，不过，这通常都得要求该属性具有不同的值，如 `font-size`这个属性，对 `screen` 和 `print`这两类媒体都很有用，由于这两种媒体类型差别很大，因此，我们需要为这共同属性设置不同的值; document在计算机屏幕上通常需要比在纸上使用更大的字体，所以，有必要直接让样式表或样式表的一部分适用于某些媒体类型
+
+例子：
+
+``` css
+@import url("fancyfonts.css") screen;
+@media print {
+  /* style sheet for print goes here */
+}
+
+@media print {
+  body { font-size: 10pt }
+}
+@media screen {
+  body { font-size: 13px }
+}
+@media screen, print {
+  body { line-height: 1.2 }
+}
+```
+
+> 媒体类型名称不区分大小写。CSS 2.1是没有媒体查询这个概念的……
+
+CSS 2时代的媒体查询 vs CSS 3时代的：
+
+看完之前的笔记：[第1章 前期准备 - imooc](https://ppambler.github.io/imooc/01-%E6%89%80%E5%90%91%E6%8A%AB%E9%9D%A1%E7%9A%84%E5%93%8D%E5%BA%94%E5%BC%8F%E5%BC%80%E5%8F%91/%E7%AC%AC1%E7%AB%A0-%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87.html#1-6-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2-1)
+
+> 以前写这个笔记的时候，没有感受到为啥老师要对比一下CSS2.1，现在看来，这老师是真得牛逼！
+
+那么 `@page`呢？
+
+`@page` 规则用于在打印文档时修改某些CSS属性。你不能用`@page`规则来修改所有的CSS属性，而是只能修改「页边距（margins）」、「orphans」、「widows」、「分页符（page breaks）」这4个属性。除了这4个属性以外，你对其它的CSS属性的修改是无效的
+
+例子：
+
+``` css
+@page {
+  margin: 1cm;
+}
+
+@page :first {
+  margin: 2cm;
+}
+```
+
+➹：[Media types](https://www.w3.org/TR/2011/REC-CSS2-20110607/media.html#q7.0)
+
+➹：[Media Queries](https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/)
+
+➹：[@media - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+
+➹：[深入理解CSS Media媒体查询 - 小火柴的蓝色理想 - 博客园](https://www.cnblogs.com/xiaohuochai/p/5848612.html)
+
+➹：[CSS媒体查询 - 掘金](https://juejin.im/post/5affd7ff6fb9a07aa2139ebb)
+
+➹：[@page - CSS: Cascading Style Sheets | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/@page)
+
+➹：[CSS 打印 - 龙墨 - SegmentFault 思否](https://segmentfault.com/a/1190000010145260)
+
+
+
+
+
+
+
+
+
+
+
+
