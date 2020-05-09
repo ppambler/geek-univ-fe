@@ -13,3 +13,9 @@
 5. 编写一个快速排序代码，并且用动画演示它的过程。
 
 > 都不会……
+
+## 3、偶遇的一些文章？
+
+➹：[savokiss - 知乎](https://www.zhihu.com/people/savokiss/posts)
+
+➹：[Lydia Hallie - DEV Community 👩‍💻👨‍💻](https://dev.to/lydiahallie/comments)
